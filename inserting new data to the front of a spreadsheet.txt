@@ -1,0 +1,36 @@
+
+#comments
+
+
+
+import pandas as pd
+
+
+
+
+#load the excel file into a Pandas Data Frame
+
+
+df = pd.read_excel('data/q.xlsx')
+
+
+df_insert = pd.read_excel('data/r.xlsx')
+#depends on file type
+
+
+ a different fucntion will be used 
+
+#dataframe that needs to be changed . insert (location of column, new name of column, data to be inserted)
+
+
+df.insert(loc = 0, column ='name_of_column',value = df_insert)
+print(df)
+
+
+
+
+
+#exports it back out into an excel file
+
+df.to_excel('data/r_and_q.xlsx')
+
